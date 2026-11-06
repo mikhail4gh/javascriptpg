@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT CLASS</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <input type="text"placeholder="username">
-        <input type="text" placeholder="password">
-        <button onclick="alert('you have successfully signed in')">SIGN IN</button>
-
+    <div id="bigBox">
+        <input type="text" placeholder="FULL NAME">
+        <input type="text" placeholder="SUBJECT">
+        <input type="text" placeholder="SCORE">
+        <p id="result"></p>
+        <button onclick="result()">GENERATE RESULT</button>
     </div>
-    
+    <div id="secondBox">
+        <input type="text" placeholder="FULL NAME">
+        <input type="text" placeholder="SUBJECT">
+        <input type="text" placeholder="SCORE">
+        <p id="score"></p>
+        <button onclick="score()">GENERATE RESULT</button>
+    </div>
+    <div id="thirdBox">
+        <input type="text" placeholder="FULL NAME">
+        <input type="text" placeholder="SUBJECT">
+        <input type="text" placeholder="SCORE">
+        <p id="scoresss"></p>
+        <button onclick="scoresss()">GENERATE RESULT</button>
+    </div>
+
+
+    <script>
+        function result(){
+            document.getElementById("result").innerHTML ="GRADE B";
+        };
+        function score(){
+            document.getElementById("score").innerHTML ="GRADE A";
+        };
+        function scoresss(){
+            document.getElementById("scoresss").innerHTML ="GRADE F";
+        };
+
+    </script>
+
 </body>
 </html>
